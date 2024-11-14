@@ -82,7 +82,7 @@ var ProtoSvcTsdFormatter;
             services.push(serviceData);
         });
         TplEngine_1.TplEngine.registerHelper("lcFirst", (str) => {
-            return str.charAt(0).toLowerCase() + str.slice(1);
+            return str.charAt(0) + str.slice(1);
         });
         TplEngine_1.TplEngine.registerHelper("fetchIsGrpcJs", () => {
             return isGrpcJs;

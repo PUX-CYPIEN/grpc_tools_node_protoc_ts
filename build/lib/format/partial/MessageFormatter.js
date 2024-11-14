@@ -82,7 +82,7 @@ var MessageFormatter;
                 }
                 existing.push(field);
             }
-            fieldData.snakeCaseName = field.getName().toLowerCase();
+            fieldData.snakeCaseName = field.getName();
             fieldData.camelCaseName = Utility_1.Utility.snakeToCamel(fieldData.snakeCaseName);
             fieldData.camelUpperName = Utility_1.Utility.uppercaseFirst(fieldData.camelCaseName);
             // handle reserved keywords in field names like Javascript generator

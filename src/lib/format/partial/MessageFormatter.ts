@@ -148,7 +148,7 @@ export namespace MessageFormatter {
                 existing.push(field);
             }
 
-            fieldData.snakeCaseName = field.getName().toLowerCase();
+            fieldData.snakeCaseName = field.getName();
             fieldData.camelCaseName = Utility.snakeToCamel(fieldData.snakeCaseName);
             fieldData.camelUpperName = Utility.uppercaseFirst(fieldData.camelCaseName);
             // handle reserved keywords in field names like Javascript generator
